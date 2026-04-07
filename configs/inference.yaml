@@ -1,0 +1,14 @@
+model:
+  base_model: models/base
+  lora_path: models/qlora
+  tokenizer_path: models/tokenizer
+
+inference:
+  max_new_tokens: 256
+  temperature: 0.2
+  top_p: 0.9
+  do_sample: false
+
+agent:
+  complexity_threshold: 10
+  enable_llm: true
